@@ -11,3 +11,4 @@ blogpost = BlogPost.create([{title: 'Star wars', content: 'story about the last 
                     deliberate disinformation or 
                     hoaxes spread via traditional 
                     news media.'}])
+                    

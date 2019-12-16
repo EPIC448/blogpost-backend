@@ -1,6 +1,12 @@
 
 
+
  Just Notes. 
+
+  Resources to Use.
+ https://github.com/Awilmerding1/expenses-frontend
+
+ https://github.com/Awilmerding1/expenses-backend
 
  BACK-END must have. (Requirements. )
 

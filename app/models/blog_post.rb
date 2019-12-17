@@ -25,6 +25,7 @@ class BlogPost < ApplicationRecord
     #    thinking .  self.content = self.title.content 
 
                 self.save
+            end
 
         else
 

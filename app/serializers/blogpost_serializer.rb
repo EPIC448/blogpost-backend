@@ -1,3 +1,6 @@
 class BlogpostSerializer < ActiveModel::Serializer
-  attributes :id, :title, :content
+
+  include FastJsonapi::BlogpostSerializer
+
+  attributes  :title, :content
 end

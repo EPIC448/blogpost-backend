@@ -1,9 +1,14 @@
 class BlogPostsController < ApplicationController
 
-    
+    # notes: Looking serilazers should help with that or RAils docmentations.
+    #  Because the serializer is not communicationg right now
     #  spit out API in json formate
+    
     def index
         @blog_posts = BlogPost.all 
+        
+    # debugger
+        # render json: BlogpostSerializer.new(@blog_posts)
         render json: @blog_posts
     end
 
@@ -22,7 +27,7 @@ class BlogPostsController < ApplicationController
 
     def show
         @blog_post = BlogPost.find(params[:id])
-        render json: @account
+        render json: BlogpostSerializer.new(@blog_post)
     end
 
 

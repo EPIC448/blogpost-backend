@@ -63,3 +63,20 @@ Controllers (blog_title & blog_post)
  set up => resources :blog_titles do
    	resources  :blog_posts (note, nesting the blog_post inside the blog_title so we can access it later. )
 
+
+
+
+To do list for the project ...
+
+Question: I feel like projects is so nested. I cant access the array. 
+
+ Make sure that Yo have access the data coming in to your React Redux app,
+  
+  Have it display on the webpages. 
+  
+
+  look over serializer
+   https://learn.co/lessons/using-active-model-serializer
+
+
+   use binding.pry

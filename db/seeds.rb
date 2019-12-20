@@ -6,9 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-blogpost = BlogPost.create([{title: 'Star wars', content: 'story about the last Jedi.'}, 
-                    {title: '4', content: 'is a form of news consisting of 
-                    deliberate disinformation or 
-                    hoaxes spread via traditional 
-                    news media.'}])
+blogpost = BlogPost.create([
+            {title: 'Star wars', content: 'story about the last Jedi.'}, 
+                   
+            {title:'second title', content: 'is a form of news consisting of 
+                    deliberate disinformation or hoaxes spread via traditional 
+                    news media.'},
+            {title: 'Big Black Horse', content: 'on a cherry tree'}
+
+
+                ])
                     

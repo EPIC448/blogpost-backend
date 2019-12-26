@@ -24,6 +24,14 @@ class BlogPostsController < ApplicationController
         
     end
 
+    def update
+        @blog_post = BlogPost.find(params[:id])
+        @blog_post.update(title: params["title"]["content"])
+        @blog_post.save
+        render json: @blog_post
+    end
+
+
 
     def show
         @blog_post = BlogPost.find(params[:id])

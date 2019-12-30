@@ -8,21 +8,21 @@ class BlogPost < ApplicationRecord
 #     def update_blog(title, content)
 #         # Update a blog, whenever we add to it.
 #         if title == 'title' && content == 'content'
-#            if  self.title != self.title 
-#             self.title = "The new title entry"
+#            if  title != self.title 
+#             title = self
 
 #             #  Change what was entered ... You may not need to do a logic here. 
-# #    thinking .  self.title = self.title.update
-# #    BlogPost.update(id, :title = > 'new Title')
+# #          thinking .  self.title = self.title.update
+# #             BlogPost.update(id, :title = > 'new Title')
 
-#             self.save
-#            end
+#            self.save
+#           end
 
 #         elsif
-#             if self.content != self.content
-# #   Change to the new content
+#             if self.content != content
+# #           Change to the new content
 
-#        self.content = "The new content entry"
+#        self.content = content
 #     #    thinking .  self.content = self.title.content 
 
 #                 self.save

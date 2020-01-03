@@ -1,5 +1,6 @@
 class BlogPostsController < ApplicationController
 
+
     # notes: Looking serilazers should help with that or RAils docmentations.
     #  Because the serializer is not communicationg right now
     #  spit out API in json formate
@@ -29,16 +30,17 @@ class BlogPostsController < ApplicationController
 
         # if @blog_post.update_blog(title: params[:title],content: params[:content]) !=  @blog_post(title: params[:title],content: params[:content])
             #   Need to check here
-               if   @blog_post.update(title: params[:title],content: params[:content]) != @blog_post(title: params[:title],content: params[:content])
+                 @blog_post.update(title: params[:title],content: params[:content])
                 # binding.pry
-                @blog_post.save
-                render json: @blog_post
-        else
+                if @blog_post.save
+                    render json: @blog_post
+                else
+                    render json: {error: @blog_post.error}
+                end
         # Check to update the block that they only submited...
-            render json: {error: 'Blog_post was not saved'}
         # else if they are only update the content....  it makes the title Null... And it will save it like that
         #  we only what to update what ever they update.
-        end
+    
     end
 
 

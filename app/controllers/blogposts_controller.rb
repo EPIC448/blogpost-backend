@@ -1,9 +1,6 @@
 class BlogpostsController < ApplicationController
 
 
-    # notes: Looking serilazers should help with that or RAils docmentations.
-    #  Because the serializer is not communicationg right now
-    #  spit out API in json formate
     
     
     def index
@@ -11,8 +8,7 @@ class BlogpostsController < ApplicationController
 
         @blogposts = Blogpost.all 
 
-    # debugger
-        # render json: BlogpostSerializer.new(@blog_posts)
+  
         render json: @blogposts
     end
 
@@ -31,8 +27,7 @@ class BlogpostsController < ApplicationController
     def update
         @blog_post = BlogPost.find(params[:id])
 
-        # if @blog_post.update_blog(title: params[:title],content: params[:content]) !=  @blog_post(title: params[:title],content: params[:content])
-            #   Need to check here
+   
                  @blog_post.update(title: params[:title],content: params[:content])
                 
                 if @blog_post.save
@@ -53,7 +48,7 @@ class BlogpostsController < ApplicationController
     end
 
 
-    # update and delete is not madatory 
+
 
     private
 

@@ -44,6 +44,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 
+HINT: Use can resuse this Backkend with any App to build any Front end with it.  
+
 Meta
 Your Name – samuel.O -> samrey2018@gmail.com / https://github.com/epic448
 

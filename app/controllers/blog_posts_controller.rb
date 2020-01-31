@@ -1,8 +1,5 @@
 class BlogPostsController < ApplicationController
 
-
-e
-    
     def index
         @blog_posts = BlogPost.all 
         

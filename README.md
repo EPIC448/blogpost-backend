@@ -1,22 +1,88 @@
 
 **Project Title**
+ 
+ **BlogPost back_end section**
+
 **Motivation**
+
+ The is half of a whole blogpost project. This part was created to function as a API section where the data would be retrived for the front_end part of the project. 
+
+ Using Active Record Mechanics(CRUD), we are able to create data and retrive the data as needed. Also, we created a table using SQL. Also, has_many, belongs_to, has_many :through relationship  models were used for the project.
+   --- Screen shot of Models.
+
+
 
 **Build Status**
 
-**Code style**
-
-**ScreenShots**
-
 **Code_Sample**
 
-**Installation**
+ *Schema*
+  ```
 
-* Ruby version
+ActiveRecord::Schema.define(version: 2019_12_04_221736) do
+
+  create_table "blog_posts", force: :cascade do |t|
+    t.string "title"
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+end
+  ```
+
+*Seed*
+
+```
+blogpost = BlogPost.create([
+            {title: 'Star wars', content: 'story about the last Jedi.'}, 
+                   
+            {title:'second title', content: 'is a form of news consisting of 
+                    deliberate disinformation or hoaxes spread via traditional 
+                    news media.'},
+            {title: 'Big Black Horse', content: 'on a cherry tree'}
+
+
+                ])
+```
+
+*Controller_code*
+```
+class BlogpostsController < ApplicationController
+
+
+    
+    
+    def index
+
+        @blogposts = Blogpost.all 
+
+  
+        render json: @blogposts
+    end
+
+
+
+    def create
+        @blog_post = BlogPost.new(blog_post_params)
+        if @blog_post.save
+            render json: @blog_post
+        else
+            render json: {error: 'Error Creating this Blog Post'}
+        end
+        
+    end
+
+}
+```
+
+**Tech/Framework used**
+  Project used a Ruby on Rails framework
+  *Ruby version*
 
 ruby-2.3.3
 
-* System dependencies
+   *System dependencies*
 
 
 ruby '2.3.3'
@@ -41,18 +107,19 @@ gem 'active_model_serializers'
 gem 'pry', '~> 0.12.2'
 gem 'fast_jsonapi'
 
-
+**Installation**
 * Configuration
 Make Sure to Fork this project into you github repo then clone it down to you local machine https://github.com/EPIC448/blogpost-backend
 
 Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-frontend
 
  In your local shell or terminal, navigate to  the proper folder and type :
-  Rail server or Rails s
+  *Rail server or Rails s*
+   into the Terminal
 
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view in the browser.
 
 
 

@@ -4,7 +4,6 @@ class BlogpostsController < ApplicationController
     
     
     def index
-        # binding.pry
 
         @blogposts = Blogpost.all 
 
@@ -35,9 +34,7 @@ class BlogpostsController < ApplicationController
                 else
                     render json: {error: @blog_post.error}
                 end
-        # Check to update the block that they only submited...
-        # else if they are only update the content....  it makes the title Null... And it will save it like that
-        #  we only what to update what ever they update.
+       
     
     end
 

@@ -1,18 +1,17 @@
 
 **Project Title**
  
- **BlogPost back_end section**
+ **BlogPost "Back_End" section** 
+
+ ![Back_End of this section](https://media.giphy.com/media/9YKvq41UGOkCI/giphy.gif)
 
 **Motivation**
 
  The is half of a whole blogpost project. This part was created to function as a API section where the data would be retrived for the front_end part of the project. 
 
  Using Active Record Mechanics(CRUD), we are able to create data and retrive the data as needed. Also, we created a table using SQL. Also, has_many, belongs_to, has_many :through relationship  models were used for the project.
-   --- Screen shot of Models.
 
 
-
-**Build Status**
 
 **Code_Sample**
 
@@ -108,24 +107,39 @@ gem 'pry', '~> 0.12.2'
 gem 'fast_jsonapi'
 
 **Installation**
-* Configuration
+
+*Configuration*
+
 Make Sure to Fork this project into you github repo then clone it down to you local machine https://github.com/EPIC448/blogpost-backend
 
-Hint: Make sure to  clone and start the backend section of this project at https://github.com/EPIC448/blogpost-frontend
+**Hint:**
+
+ Make sure to  clone and start the Front_end section of this project at https://github.com/EPIC448/blogpost-frontend  as there come in pairs.
 
  In your local shell or terminal, navigate to  the proper folder and type :
-  *Rail server or Rails s*
-   into the Terminal
+  *Rail server or Rails s*  into the Terminal
 
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view in the browser.
 
+**Commiting to Git hub**
+   
+[ ]Open the terminal. 
 
+[ ]Change the current working directory to your local repository. 
 
-HINT: Use can resuse this Backkend with any App to build any Front end with it.  
+[ ]Commit the file that you've staged in your local repository.
 
-Meta
+[ ] $ git commit -m "Add existing file"
+Push the changes in your local repository to GitHub. 
+
+[ ]$ git push origin branch-name. 
+   
+   
+
+**Meta**
+
 Your Name – samuel.O -> samrey2018@gmail.com / https://github.com/epic448
 
 Distributed under the Samuel.O license. See LICENSE for more information.

@@ -1,4 +1,16 @@
 
+**Project Title**
+**Motivation**
+
+**Build Status**
+
+**Code style**
+
+**ScreenShots**
+
+**Code_Sample**
+
+**Installation**
 
 * Ruby version
 
@@ -9,10 +21,10 @@ ruby-2.3.3
 
 ruby '2.3.3'
 
-gem 'rails', '~> 5.2.3'
-gem 'sqlite3'
-gem 'puma', '~> 3.11'
-gem 'rack-cors'
+gem 'rails', '~> 5.2.3';
+gem 'sqlite3';
+gem 'puma', '~> 3.11';
+gem 'rack-cors';
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

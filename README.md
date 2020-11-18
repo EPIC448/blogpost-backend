@@ -9,7 +9,7 @@
 
  The is half of a whole blogpost project. This part was created to function as a API section where the data would be retrived for the front_end part of the project. 
 
- Using Active Record Mechanics(CRUD), we are able to create data and retrive the data as needed. Also, we created a table using SQL. Also, has_many, belongs_to, has_many :through relationship  models were used for the project.
+ Using Active Record Mechanics(CRUD), I was  able to create data and retrive the data as needed. Also, I created a table using SQL. Also, has_many, belongs_to, has_many :through relationship  models were used for the project.
 
 
 

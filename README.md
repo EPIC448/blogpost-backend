@@ -79,12 +79,12 @@ class BlogpostsController < ApplicationController
   Project used a Ruby on Rails framework
   *Ruby version*
 
-ruby-2.3.3
+ruby-2.6.1
 
    *System dependencies*
 
 
-ruby '2.3.3'
+ruby '2.6.1'
 
 gem 'rails', '~> 5.2.3';
 gem 'sqlite3';

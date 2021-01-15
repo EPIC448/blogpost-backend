@@ -46,4 +46,6 @@ class BlogPostsController < ApplicationController
         params.require(:blog_post).permit(:title, :content)
     end
 
+    #  want to perform some 
+    # check before you allow the user to add a new pos
 end

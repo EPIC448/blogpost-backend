@@ -80,3 +80,5 @@ Question: I feel like projects is so nested. I cant access the array.
    And we need to see what we need to compare the new submitted blog_post to.... As in checking if its already excite...
 
 --- This website really helped W/ ruby installations/ updates. https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos
+
+--- App is Updated and working.  

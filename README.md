@@ -84,7 +84,7 @@ ruby-2.6.1
    *System dependencies*
 
 
-ruby '2.6.1'
+ruby '2.6.3'
 
 gem 'rails', '~> 5.2.3';
 gem 'sqlite3';

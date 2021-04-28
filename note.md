@@ -82,3 +82,6 @@ Question: I feel like projects is so nested. I cant access the array.
 --- This website really helped W/ ruby installations/ updates. https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos
 
 --- App is Updated and working.  
+
+--- TO change the ruby version you use
+ Chruby chruby 2.6.3. Assuming you have it installed already. 
